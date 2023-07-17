@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+h3 {
+  color: #845EC2;
+  margin-left: 15px;
+}
+
+.mic {
+  height: 60px;
+  margin-top: -20px;
+  margin-left: 15px;
+}
+
+.title-btn {
+  align-items: center;
+  border: 1px solid #845EC2;
+  border-radius: 100%;
+  width: 100px
+  
+}
+
+.title-btn:hover {
+  background-color: #B39CD0;
+}
+
+.nav-cast {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.767);
+  padding: 25px;
+  
+}
+
+.navContainer {
+  
+  margin-left: 300px;
+  padding: 10px;
+  height: 30px;
+}
+
+
+.btn-nav {
+  
+  height: 30px;
+  width: 100px;
+  margin: 5px
+  
+}
+
+.subContainer {
+  margin-left: 200px;
+}
+
