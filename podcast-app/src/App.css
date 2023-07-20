@@ -4,8 +4,7 @@
 
 body {
   font-family: "Karla", sans-serif;
-  margin: 0;
-  
+  /* margin: 0;  */
 }
 
 #video-background {
@@ -59,9 +58,15 @@ h3 {
 
 .btn-nav {
 
-  height: 30px;
+  height: 40px;
   width: 100px;
-  margin: 5px
+  margin: 5px;
+  background-color: #7c5ec269;
+  border-radius: 6%;
+  font-weight: bolder;
+  align-items: center;
+  color: lavender;
+  
 }
 
 .subContainer {
@@ -100,12 +105,10 @@ h3 {
 
 .audio {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  list-style: none;
-  padding: 0;
-  
+  grid-template-columns: repeat(3, 1fr);
+ 
 }
+
 
 .audio li {
   margin: 0;
@@ -116,13 +119,12 @@ h3 {
   margin: 10px;
 }
 
-.wrapper {
-  padding: 20px
-}
+.loadingState {
+  color: red;
+  font-weight: bolder;
+  font-size: larger;
 
-/* .imgDiv {
-  background-color: black;
-} */
+}
 
 .img {
   height: 100px;
@@ -142,6 +144,28 @@ h3 {
   padding: 10px;
 }
 
-.audio-player {
-  background-color: #00C9A7;
+.form {
+  
+  text-align: center;
+  margin: 10px;
 }
+
+.form-search {
+  margin: 5px;
+  width: 180px;
+  height: 40px;
+  font-weight: bold;
+  background-color:#845EC2;
+  color:#171544
+}
+
+.form-search:hover {
+  background-color: #171544;
+  color: snow;
+}
+
+#submit-search {
+  background-color: #296073;
+}
+
+

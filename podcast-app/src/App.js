@@ -1,59 +1,127 @@
-import React from 'react'
+// import React from 'react'
+// import video from './videos/BG1.mp4';
+// import './App.css';
+// import NavBar from './components/nav';
+// import Show from './components/preview';
+// import SinglePodcastPreview from './components/showaudio';
+
+// function App() {
+//   const [selectedPodcastId, setSelectedPodcastId] = React.useState(null);
+//   const [showShowComponent, setShowShowComponent] = React.useState(true);
+
+//   const handlePodcastClick = (podcastId) => {
+//     setSelectedPodcastId(podcastId);
+//     setShowShowComponent(false); 
+//   };
+
+//   const handleHomeClick = () => {
+//     setSelectedPodcastId(null);
+//     setShowShowComponent(true);
+//   };
+
+//   return (
+//     <div>
+//       <NavBar handleHomeButtonClick={handleHomeClick} />
+//       <video src={video} autoPlay muted loop id="video-background" />
+//       {showShowComponent ? (
+//         <Show onPodcastClick={handlePodcastClick} />
+//       ) : selectedPodcastId ? (
+//         <SinglePodcastPreview podcastId={selectedPodcastId} />
+//       ) : (
+//         <div>Home page content here</div> // You can replace this with your homepage content
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// import React from 'react';
+// import video from './videos/BG1.mp4';
+// import './App.css';
+// import NavBar from './components/nav';
+// import Show from './components/preview';
+// import SinglePodcastPreview from './components/showaudio';
+
+// function App() {
+//   const [selectedPodcastId, setSelectedPodcastId] = React.useState(null);
+//   const [showShowComponent, setShowShowComponent] = React.useState(true);
+
+//   const handlePodcastClick = (podcastId) => {
+//     setSelectedPodcastId(podcastId);
+//     setShowShowComponent(false);
+//   };
+
+//   const handleHomeClick = () => {
+//     setSelectedPodcastId(null);
+//     setShowShowComponent(true); // Set showShowComponent to true to reload the Show component
+//   };
+
+//   return (
+//     <div>
+//       <NavBar handleHomeButtonClick={handleHomeClick} />
+//       <video src={video} autoPlay muted loop id="video-background" />
+//       {showShowComponent ? (
+//         <Show onPodcastClick={handlePodcastClick} />
+//       ) : selectedPodcastId ? (
+//         <SinglePodcastPreview podcastId={selectedPodcastId} />
+//       ) : (
+//         <div>Home page content here</div> // You can replace this with your homepage content
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from 'react';
 import video from './videos/BG1.mp4';
 import './App.css';
 import NavBar from './components/nav';
 import Show from './components/preview';
 import SinglePodcastPreview from './components/showaudio';
 
-// function App() {
-//   const [showShowComponent, setShowShowComponent] = React.useState(false);
-
-//   const handleHomeButtonClick = () => {
-//     setShowShowComponent(true);
-//   };
-
-//   return (
-
-//     <div>
-//       <NavBar handleHomeButtonClick={handleHomeButtonClick} />
-//       <div className='overlay'></div>
-//       <video src={video} autoPlay muted loop id="video-background" />
-//       <div className='preview-show'>
-//         {showShowComponent && <Show />}
-//       </div>
-//       <div>
-//         {/* <SingleShow showId={showId} /> */}
-//       </div>
-
-//     </div>
-//   );
-// }
-
 function App() {
   const [selectedPodcastId, setSelectedPodcastId] = React.useState(null);
-  const [showShowComponent, setShowShowComponent] = React.useState(false);
+  const [showShowComponent, setShowShowComponent] = React.useState(true);
 
-  const handleHomeButtonClick = () => {
-    setSelectedPodcastId(null); // Reset selectedPodcastId when going back to the homepage
-    setShowShowComponent(true);
-  };
 
   const handlePodcastClick = (podcastId) => {
     setSelectedPodcastId(podcastId);
-    setShowShowComponent(false); // Hide the Show component when a podcast is selected
+    setShowShowComponent(false);
   };
+
+  // const handleHomeClick = () => {
+  //   setSelectedPodcastId(null);
+  //   setShowShowComponent(true);
+  // };
+
+  const navigateToHomePage = () => {
+    // Set showShowComponent to true to reload the Show component
+    setShowShowComponent(true);
+
+    // Scroll to the top of the page (optional)
+    window.location.href = "http://localhost:3000/";
+  };
+
+  
 
   return (
     <div>
-      <NavBar handleHomeButtonClick={handleHomeButtonClick} />
-      <div className='overlay'></div>
+      <NavBar handleHomeButtonClick={navigateToHomePage} />
       <video src={video} autoPlay muted loop id="video-background" />
       {showShowComponent ? (
         <Show onPodcastClick={handlePodcastClick} />
-      ) : (
+      ) : selectedPodcastId ? (
         <SinglePodcastPreview podcastId={selectedPodcastId} />
+      ) : (
+        <div>Home page content here</div> // You can replace this with your homepage content
       )}
     </div>
   );
 }
+
 export default App;
+
+
+
