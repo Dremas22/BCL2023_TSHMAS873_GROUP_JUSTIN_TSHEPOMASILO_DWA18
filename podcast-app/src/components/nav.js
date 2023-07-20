@@ -30,7 +30,7 @@ export default function NavBar({ handleHomeButtonClick }) {
             <button className="btn-nav">Fiction</button>
           </div>
         )}
-        <div></div>
+        
       </nav>
     );
   }

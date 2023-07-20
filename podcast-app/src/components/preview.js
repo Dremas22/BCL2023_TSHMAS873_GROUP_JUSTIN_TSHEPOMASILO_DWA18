@@ -21,23 +21,26 @@ function Show() {
     }
 
     return (
-        
+
         <div className="previewPodcast">
             {podcasts.map((podcast) => (
                 <div key={podcast.id} className="podcastImage">
                     <div className='imgDiv'>
-                        <img src={podcast.image} className="img" alt="img" />
+                        <img src={podcast.image} className="img" alt="podcastimage" />
                     </div>
                     <div>
                         <h4>{podcast.title}</h4>
-                        <p>Season: {podcast.seasons}</p> 
-                        <p>Genre: {podcast.genres.join(", ")}</p> 
-                        <p>Updated: {new Date(podcast.updated).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })}</p> 
+                        <p>Season: {podcast.seasons}</p>
+                        <p>Genre: {podcast.genre}</p>
+                        <p>Updated: {new Date(podcast.updated).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })}</p>
                     </div>
-                    
                 </div>
             ))}
         </div>
     );
 }
+
 export default Show;
+
+
+
