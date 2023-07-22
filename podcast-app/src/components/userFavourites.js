@@ -1,54 +1,3 @@
-// import React from 'react'
-
-// const User = () => {
-//   const [favorites, setFavorites] = React.useState([]);
-//   const [newFavorite, setNewFavorite] = React.useState('');
-
-//   const handleAddFavorite = () => {
-//     if (newFavorite.trim() === '') return;
-
-//     // Check if the newFavorite already exists in the favorites list
-//     if (!favorites.includes(newFavorite)) {
-//       setFavorites([...favorites, newFavorite]);
-//       setNewFavorite('');
-//     }
-//   };
-
-//   const handleRemoveFavorite = (favorite) => {
-//     const updatedFavorites = favorites.filter((item) => item !== favorite);
-//     setFavorites(updatedFavorites);
-//   };
-
-//   return (
-//     <div>
-//       <h2 className='h2-favourites'>User Favorites</h2>
-//       <div className='add-favorites'>
-//         <input
-//           type="text"
-//           className="input-favours"
-//           value={newFavorite}
-//           onChange={(e) => setNewFavorite(e.target.value)}
-//           placeholder="Enter favorite item"
-//         />
-//         <button onClick={handleAddFavorite} className='btn-favours'>Add Favorite</button>
-//       </div>
-      
-//         <ul className='ul-favours'>
-//           {favorites.map((favorite, index) => (
-//             <li key={index} className='li-favours'>
-//               {favorite}{' '}
-//               <button onClick={() => handleRemoveFavorite(favorite)} className='btn-favours'>
-//                 Remove
-//               </button>
-//             </li>
-//           ))}
-//         </ul>
-      
-//     </div>
-//   );
-// };
-
-// export default User;
 
 import React from 'react';
 
@@ -115,7 +64,7 @@ const User = () => {
   });
 
   return (
-    <div>
+    <div className='epi-favor'>
       <h2 className="h2-favourites">User Favorites</h2>
       <div className="add-favorites">
         <input
