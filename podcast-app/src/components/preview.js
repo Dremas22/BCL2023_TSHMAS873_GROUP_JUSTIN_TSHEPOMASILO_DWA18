@@ -24,7 +24,7 @@ function Show({ onPodcastClick }) {
         fetch('https://podcast-api.netlify.app/shows')
             .then((response) => response.json())
             .then((data) => {
-                console.log(data); // Check if you're receiving the expected data
+                //console.log(data); // Check if you're receiving the expected data
                 setPodcasts(data);
                 setLoading(false);
             })
@@ -39,7 +39,7 @@ function Show({ onPodcastClick }) {
         onPodcastClick(podcastId, genre);
     };
 
-    // Function to handle sorting based on the selected option
+    
     useEffect(() => {
         if (sortOption === 'A-Z') {
             setPodcasts([...podcasts.sort((a, b) => a.title.localeCompare(b.title))]);

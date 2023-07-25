@@ -3,7 +3,7 @@ import video from './videos/BG1.mp4';
 import './App.css';
 import NavBar from './components/nav';
 import Show from './components/preview';
-import SinglePodcastPreview from './components/showaudio';
+import SinglePodcastPreview from './components/shwoEpisodes';
 
 function App() {
   const [selectedPodcastId, setSelectedPodcastId] = React.useState(null);

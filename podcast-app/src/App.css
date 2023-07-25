@@ -32,7 +32,8 @@ h3 {
   align-items: center;
   border: 3px solid #845EC2;
   border-radius: 100%;
-  width: 100px
+  width: 100px;
+  margin-left: 100px;
 }
 
 .title-btn:hover {
@@ -45,7 +46,7 @@ h3 {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.767);
   padding: 25px;
-  
+
 }
 
 .navContainer {
@@ -66,18 +67,18 @@ h3 {
   border-radius: 6%;
   font-weight: bolder;
   align-items: center;
-  color: lavender;  
+  color: lavender;
 }
 
 .btn-nav:hover {
   background-color: #171544;
   border: 1px solid #B0A8B9;
-  color:aqua;
+  color: aqua;
 }
 
 
 .search-img {
- 
+
   margin-left: 350px;
 }
 
@@ -90,9 +91,9 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* height: 80px; */
-  
+
   padding: 10px;
-  
+
 }
 
 .podcastImage {
@@ -111,7 +112,7 @@ h3 {
 
 .episodes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   size: 1em;
   border: 1px solid #0E0B20;
   text-align: center;
@@ -119,10 +120,12 @@ h3 {
   height: 310px;
   padding: 10px;
   background-color: #B0A8B9;
-  margin: 15px;
+  margin: 20px;
   border-radius: 10px;
   color: #0E0B20;
 }
+
+
 
 .podcastImage:hover {
   background-color: #171544;
@@ -135,13 +138,6 @@ h3 {
   border: 1px solid #B0A8B9;
   color: snow;
 }
-
-.audio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
- 
-}
-
 
 .audio li {
   margin: 0;
@@ -177,7 +173,7 @@ h3 {
 }
 
 .form {
-  
+
   text-align: center;
   margin: 10px;
 }
@@ -187,8 +183,8 @@ h3 {
   width: 180px;
   height: 40px;
   font-weight: bold;
-  background-color:#845EC2;
-  color:#171544
+  background-color: #845EC2;
+  color: #171544
 }
 
 .form-search:hover {
@@ -205,8 +201,8 @@ h3 {
 }
 
 .title-seasons {
-  padding-top: 30px;
-  color:aqua;
+  padding-top: 50px;
+  color: aqua;
 }
 
 .user-favors {
@@ -241,28 +237,23 @@ h3 {
 }
 
 .h2-favourites {
-  color:#BF33B5;
+  color: #F81404;
 }
 
 .add-favorites {
   background-color: #B0A8B9;
+  padding-bottom: 10px;
   height: 40px;
-  
+  margin-left: 5px;
+
 }
 
-
+#sortingType, #sortingOrder {
+  margin: 5px;
+}
 
 .btn-favours:hover {
   background-color: #171544;
   color: snow;
 }
-
-#sortingOrder, .sort-items, #sortingType {
-  margin: 10px;
-  
-}
-
-
-
-
 

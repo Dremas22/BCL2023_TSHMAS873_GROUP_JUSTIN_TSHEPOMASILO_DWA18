@@ -10,11 +10,10 @@ const User = () => {
   const handleAddFavorite = () => {
     if (newFavorite.trim() === '') return;
 
-    // Check if the newFavorite already exists in the favorites list
     if (!favorites.some((fav) => fav.name === newFavorite)) {
       const newFav = {
         name: newFavorite,
-        date: new Date().toISOString(), // Store the date as a string in ISO format
+        date: new Date().toISOString(), 
       };
       setFavorites([...favorites, newFav]);
       setNewFavorite('');
@@ -35,9 +34,8 @@ const User = () => {
   };
 
   const formatDate = (date) => {
-    // Parse the ISO date string back to a Date object
+    
     const parsedDate = new Date(date);
-    // Format the date to a simple readable format (e.g., "YYYY-MM-DD HH:MM")
     const year = parsedDate.getFullYear();
     const month = String(parsedDate.getMonth() + 1).padStart(2, '0');
     const day = String(parsedDate.getDate()).padStart(2, '0');
