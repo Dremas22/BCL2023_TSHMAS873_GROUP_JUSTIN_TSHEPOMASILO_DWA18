@@ -175,7 +175,10 @@ h3 {
 .form {
 
   text-align: center;
-  margin: 10px;
+  margin-left: 120px;
+  background-color: #7c5ec269;
+  width: 190px;
+  height: 200px
 }
 
 .form-search {
@@ -183,13 +186,13 @@ h3 {
   width: 180px;
   height: 40px;
   font-weight: bold;
-  background-color: #845EC2;
+  background-color: #7c5ec269;
   color: #171544
 }
 
 .form-search:hover {
   background-color: #171544;
-  color: snow;
+  color: aqua;
 }
 
 #submit-search {
@@ -257,3 +260,32 @@ h3 {
   color: snow;
 }
 
+.imageSlider {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #171544;
+  justify-content: center;
+  /* margin-top: 10px; */
+  margin-left: 40px;
+  border-radius: 100%;
+}
+
+.btn-cara {
+  margin: 10px
+}
+
+.cara {
+  height: 100px;
+  width: 190px;
+  border: 2px solid white;
+}
+
+.titleSearch {
+  background-color: #171544;
+}
+
+.supa {
+  padding: 10px;
+  margin: 10px
+}

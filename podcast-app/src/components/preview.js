@@ -6,6 +6,7 @@ function Show({ onPodcastClick }) {
     const [sortOption, setSortOption] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedGenre, setSelectedGenre] = useState(''); // Track the selected genre option
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const genreMap = {
         1: "Personal Growth",
@@ -39,7 +40,29 @@ function Show({ onPodcastClick }) {
         onPodcastClick(podcastId, genre);
     };
 
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
+    };
+
+    // Function to handle moving to the previous image in the slider
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(nextImage, 5000); // Change the interval time as needed (here, 5000ms = 5 seconds)
     
+        // Clear the interval when the component unmounts to avoid memory leaks
+        return () => {
+          clearInterval(interval);
+        };
+      });
+
+    // Get the first 7 images from the podcast data (if available)
+    const imageUrls = podcasts.slice(0, 7).map((podcast) => podcast.image);
+
+
+
     useEffect(() => {
         if (sortOption === 'A-Z') {
             setPodcasts([...podcasts.sort((a, b) => a.title.localeCompare(b.title))]);
@@ -71,11 +94,16 @@ function Show({ onPodcastClick }) {
 
     return (
         <div className="previewPodcast">
+            <div className="imageSlider">
+                <div><button onClick={prevImage} className='btn-cara'>Previous</button></div>
+                <div><img src={imageUrls[currentImageIndex]} className="img cara" alt="Podcast" /></div>
+                <div><button onClick={nextImage} className='btn-cara'>Next</button></div>
+            </div>
             <form className='form'>
                 <div>
                     <input
                         type="text"
-                        className='form-search'
+                        className='form-search titleSearch'
                         placeholder="Search by title..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
@@ -128,6 +156,3 @@ function Show({ onPodcastClick }) {
 }
 
 export default Show;
-
-
-

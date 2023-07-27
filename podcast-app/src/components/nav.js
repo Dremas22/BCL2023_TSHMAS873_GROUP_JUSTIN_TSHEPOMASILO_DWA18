@@ -1,8 +1,9 @@
 import React from "react"
 
+
 export default function NavBar({ handleHomeButtonClick }) {
   const [showNavContainer, setShowNavContainer] = React.useState(false);
-
+  
   const handleMouseLeave = () => {
     setShowNavContainer(false);
   };
@@ -33,3 +34,4 @@ export default function NavBar({ handleHomeButtonClick }) {
     </nav>
   );
 }
+
