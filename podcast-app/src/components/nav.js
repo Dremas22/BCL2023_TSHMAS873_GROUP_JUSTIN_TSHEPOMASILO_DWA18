@@ -28,7 +28,6 @@ export default function NavBar({ handleHomeButtonClick }) {
           <button className="btn-nav" onClick={handleHomeButtonClickInternal}>
             Home
           </button>
-          <button className="btn-nav search-img">Favourites</button>
         </div>
       )}
     </nav>

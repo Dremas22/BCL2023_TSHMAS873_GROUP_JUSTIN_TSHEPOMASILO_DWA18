@@ -54,22 +54,23 @@ const SinglePodcastPreview = ({ podcastId }) => {
 
   return (
     <div className='episodes grid-item'>
-      
-        <div className='single-season grid-item'>
-          <h2 className='podcast-title'>{title}</h2>
-          <img className='img' src={image} alt={title} />
-          <p>Genre: {genre}</p>
-          <h2 className='title-seasons'>Seasons</h2>
-        </div>
-        <div className="user-favours grid-item">
-          <User />
-          
-        </div>
-        <div className="btn-progress">
+
+      <div className='single-season grid-item'>
+        <h2 className='podcast-title'>{title}</h2>
+        <img className='img showImg' src={image} alt={title} />
+        <p>Genre: {genre}</p>
+        <h2 className='title-seasons'>Seasons</h2>
+      </div>
+
+      <div className="user-favours">
+        <div><User /></div>
+        <div className='userDiv'>
           <button className="reset-progress-button" onClick={resetProgress}>
             Reset
           </button>
         </div>
+      </div>
+
       {seasons.map((season, seasonIndex) => (
         <div key={seasonIndex} className='grid-item'>
           <h3 className='title-seasons'>{season.title}</h3>
@@ -95,6 +96,7 @@ const SinglePodcastPreview = ({ podcastId }) => {
             })}
           </ul>
         </div>
+
       ))}
     </div>
   );

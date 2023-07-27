@@ -61,10 +61,10 @@ h3 {
 .btn-nav {
 
   height: 40px;
-  width: 100px;
-  margin: 5px;
+  width: 180px;
+  height: 40px;
   background-color: #7c5ec269;
-  border-radius: 6%;
+  border-radius: 45%;
   font-weight: bolder;
   align-items: center;
   color: lavender;
@@ -79,7 +79,11 @@ h3 {
 
 .search-img {
 
-  margin-left: 350px;
+  margin-left: 50px;
+}
+
+.showImg {
+  margin-right: 70px
 }
 
 .subContainer {
@@ -168,7 +172,6 @@ h3 {
 .showPreview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* height: 80px; */
   padding: 10px;
 }
 
@@ -176,7 +179,6 @@ h3 {
 
   text-align: center;
   margin-left: 120px;
-  background-color: #7c5ec269;
   width: 190px;
   height: 200px
 }
@@ -187,7 +189,8 @@ h3 {
   height: 40px;
   font-weight: bold;
   background-color: #7c5ec269;
-  color: #171544
+  color: #d1edee;
+  border-radius: 25px;
 }
 
 .form-search:hover {
@@ -209,11 +212,18 @@ h3 {
 }
 
 .user-favors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   max-width: 400px;
-  /* margin-right: 200px; */
+  margin-left: 100px;
   padding: 20px;
   font-family: Arial, sans-serif;
   position: relative
+}
+
+.userDiv {
+  margin: 10px
 }
 
 .input-favours,
@@ -224,6 +234,12 @@ h3 {
 .input-favours {
   width: 220px;
   height: 30px;
+  background-color: #7c5ec269;
+}
+
+.input-favours:hover {
+  background-color: #171544;
+  color: snow;
 }
 
 .ul-favours {
@@ -240,14 +256,16 @@ h3 {
 }
 
 .h2-favourites {
-  color: #F81404;
+  color: #f6ecde;
 }
 
 .add-favorites {
-  background-color: #B0A8B9;
+  background-color: #7c5ec269;
   padding-bottom: 10px;
   height: 40px;
+  width: 340px;
   margin-left: 5px;
+  border-radius: 25px;
 
 }
 
@@ -255,9 +273,24 @@ h3 {
   margin: 5px;
 }
 
-.btn-favours:hover {
+#sortingType:hover {
   background-color: #171544;
   color: snow;
+}
+
+#sortingOrder:hover {
+  background-color: #171544;
+  color: snow;
+}
+
+.btn-favours {
+  background-color: #7c5ec269;
+  font-weight: bolder;
+}
+
+.btn-favours:hover {
+  background-color: #171544;
+  color: aqua;
 }
 
 .imageSlider {
@@ -289,3 +322,23 @@ h3 {
   padding: 10px;
   margin: 10px
 }
+
+.reset-progress-button, .check-fav {
+  height: 40px;
+  width: 340px;
+  border-radius: 25px;
+  background-color: #7c5ec269;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.reset-progress-button:hover {
+  color: aqua;
+  background-color: #171544;
+}
+
+.check-fav:hover {
+  color: aqua;
+  background-color: #171544;
+}
+
