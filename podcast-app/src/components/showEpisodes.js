@@ -66,7 +66,7 @@ const SinglePodcastPreview = ({ podcastId }) => {
         <div><User /></div>
         <div className='userDiv'>
           <button className="reset-progress-button" onClick={resetProgress}>
-            Reset
+            Reset Progress
           </button>
         </div>
       </div>

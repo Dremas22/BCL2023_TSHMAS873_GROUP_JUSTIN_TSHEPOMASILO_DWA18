@@ -12,9 +12,9 @@ const User = () => {
   const handleAddFavorite = () => {
     if (newFavorite.trim() === '') return;
 
-    if (!favorites.some((fav) => fav.title === newFavorite)) {
+    if (!favorites.some((fav) => fav.name === newFavorite)) {
       const newFav = {
-        title: newFavorite,
+        name: newFavorite,
         date: new Date().toISOString(),
       };
 
@@ -59,9 +59,9 @@ const User = () => {
   const sortedFavorites = favorites.slice().sort((a, b) => {
     if (sortingType === 'name') {
       if (sortingOrder === 'ascending') {
-        return a.title.localeCompare(b.title);
+        return a.name.localeCompare(b.name);
       } else {
-        return b.title.localeCompare(a.title);
+        return b.name.localeCompare(a.name);
       }
     } else {
       if (sortingOrder === 'ascending') {
