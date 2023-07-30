@@ -191,6 +191,7 @@ h3 {
   color: #d1edee;
   border-radius: 25px;
   border: 2px solid aqua;
+  box-shadow: 2px 2px 4px aqua;
 }
 
 .form-search:hover {
@@ -203,7 +204,7 @@ h3 {
 }
 
 .podcast-title {
-  margin-right: 80px;
+  margin-right: 120px;
 }
 
 .title-seasons {
@@ -252,13 +253,21 @@ h3 {
   list-style: none;
   padding: 0;
   align-items: center;
+  
 }
+
 
 .li-favours {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: snow;
+  list-style: none;
+  border-radius: 25px;
+  border: 2px solid #942193;
+  box-shadow: 2px 2px 4px #942193;
+  background-color: #171544;
+  
 }
 
 .h2-favourites {
@@ -273,6 +282,7 @@ h3 {
   margin-left: 5px;
   border-radius: 25px;
   border: 2px solid aqua;
+  box-shadow: 2px 2px 4px aqua;
 
 }
 
@@ -281,6 +291,7 @@ h3 {
   border-radius: 25px;
   background-color: #7c5ec269;
   border: 2px solid aqua;
+  box-shadow: 2px 2px 4px aqua;
 }
 
 #sortingType:hover {
@@ -297,6 +308,7 @@ h3 {
   background-color: #7c5ec269;
   font-weight: bolder;
   border: 2px solid aqua;
+  box-shadow: 2px 2px 4px aqua;
 }
 
 .btn-favours:hover {
@@ -342,6 +354,7 @@ h3 {
   font-weight: bolder;
   font-size: medium;
   border: 2px solid aqua;
+  box-shadow: 2px 2px 4px aqua;
 }
 
 .reset-progress-button:hover {
@@ -354,3 +367,24 @@ h3 {
   background-color: #171544;
 }
 
+audio::-webkit-media-controls-panel {
+  background-color:#404e61;
+}
+
+audio::-webkit-media-controls-panel:hover {
+  background-color:aqua;
+}
+
+.li-episode {
+  border: 2px solid #942193;
+  margin: 10px;
+  background-color: #7c5ec269;
+  border-radius: 25px;
+  list-style: none;
+  box-shadow: 2px 2px 4px #942193;
+}
+
+.li-episode:hover {
+  background-color: #171544;
+  color: snow
+}

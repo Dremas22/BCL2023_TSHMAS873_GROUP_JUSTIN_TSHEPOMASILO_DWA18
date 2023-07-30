@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Show({ onPodcastClick }) {
     const [podcasts, setPodcasts] = useState([]);
@@ -95,9 +97,9 @@ function Show({ onPodcastClick }) {
     return (
         <div className="previewPodcast">
             <div className="imageSlider">
-                <div><button onClick={prevImage} className='btn-cara'>Previous</button></div>
+                <div><button onClick={prevImage} className='btn-cara'></button></div>
                 <div><img src={imageUrls[currentImageIndex]} className="img cara" alt="Podcast" /></div>
-                <div><button onClick={nextImage} className='btn-cara'>Next</button></div>
+                <div><button onClick={nextImage} className='btn-cara'></button></div>
             </div>
             <form className='form'>
                 <div>

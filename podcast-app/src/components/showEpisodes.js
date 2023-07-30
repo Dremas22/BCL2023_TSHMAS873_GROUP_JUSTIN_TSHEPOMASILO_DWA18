@@ -75,13 +75,13 @@ const SinglePodcastPreview = ({ podcastId }) => {
         <div key={seasonIndex} className='grid-item'>
           <h3 className='title-seasons'>{season.title}</h3>
           <p>Number of Episodes: {season.episodes.length}</p>
-          <ul>
+          <ul >
             {season.episodes.map((episode, episodeIndex) => {
               const episodeProgress = progress[seasonIndex]?.[episodeIndex];
               const currentTime = episodeProgress ? formatTime(episodeProgress) : 'Not Started';
 
               return (
-                <li key={episodeIndex}>
+                <li key={episodeIndex} className="li-episode">
                   {episode.title}
                   <audio
                     controls
