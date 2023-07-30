@@ -34,10 +34,12 @@ h3 {
   border-radius: 100%;
   width: 100px;
   margin-left: 100px;
+  box-shadow: 3px 3px 5px #845EC2;
 }
 
 .title-btn:hover {
   background-color: #B39CD0;
+  
 }
 
 .nav-cast {
@@ -68,6 +70,7 @@ h3 {
   font-weight: bolder;
   align-items: center;
   color: lavender;
+  box-shadow: 3px 3px 5px #845EC2;
 }
 
 .btn-nav:hover {
@@ -267,6 +270,7 @@ h3 {
   border: 2px solid #942193;
   box-shadow: 2px 2px 4px #942193;
   background-color: #171544;
+  margin: 10px;
   
 }
 
@@ -377,7 +381,7 @@ audio::-webkit-media-controls-panel:hover {
 
 .li-episode {
   border: 2px solid #942193;
-  margin: 10px;
+  margin: 13px;
   background-color: #7c5ec269;
   border-radius: 25px;
   list-style: none;
