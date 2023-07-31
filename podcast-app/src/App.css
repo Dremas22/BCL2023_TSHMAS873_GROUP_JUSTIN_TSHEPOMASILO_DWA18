@@ -82,7 +82,7 @@ h3 {
   margin-right: 90px;
   border-radius: 45%;
   background-color: #942193;
-  box-shadow: 3px 3px 5px #942193;
+  box-shadow: 3px 3px 15px #942193;
   
 }
 
@@ -179,6 +179,10 @@ h3 {
   color: #0E0B20;
 }
 
+.num-episodes {
+  color:#f30ebe;
+  font-weight: bolder;
+}
 
 .podcastImage:hover {
   background-color: #171544;

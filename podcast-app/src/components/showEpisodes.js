@@ -74,7 +74,7 @@ const SinglePodcastPreview = ({ podcastId }) => {
       {seasons.map((season, seasonIndex) => (
         <div key={seasonIndex} className='grid-item'>
           <h3 className='title-seasons'>{season.title}</h3>
-          <p>Number of Episodes: {season.episodes.length}</p>
+          <p className="num-episodes">Number of Episodes: {season.episodes.length}</p>
           <ul >
             {season.episodes.map((episode, episodeIndex) => {
               const episodeProgress = progress[seasonIndex]?.[episodeIndex];
