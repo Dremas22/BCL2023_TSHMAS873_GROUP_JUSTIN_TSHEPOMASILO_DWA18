@@ -26,7 +26,6 @@ function Show({ onPodcastClick }) {
         fetch('https://podcast-api.netlify.app/shows')
             .then((response) => response.json())
             .then((data) => {
-                //console.log(data); // Check if you're receiving the expected data
                 setPodcasts(data);
                 setLoading(false);
             })
@@ -36,8 +35,6 @@ function Show({ onPodcastClick }) {
     // Function to handle clicking on a podcast
     const handlePodcastClick = (podcastId, genre) => {
         console.log(`Clicked on podcast with ID: ${podcastId}`);
-        // Add your logic here to handle the click event
-        // For example, you can open a modal or navigate to a specific podcast page.
         onPodcastClick(podcastId, genre);
     };
 
@@ -96,9 +93,9 @@ function Show({ onPodcastClick }) {
     return (
         <div className="previewPodcast">
             <div className="imageSlider">
-                <div><button onClick={prevImage} className='btn-cara'></button></div>
-                <div><img src={imageUrls[currentImageIndex]} className="img cara" alt="Podcast" /></div>
-                <div><button onClick={nextImage} className='btn-cara'></button></div>
+                <div className="prev"><button onClick={prevImage} className='btn-cara prev'></button></div>
+                <div className="active"><img src={imageUrls[currentImageIndex]} className="img cara" alt="Podcast" /></div>
+                <div className="next"><button onClick={nextImage} className='btn-cara next'></button></div>
             </div>
             <form className='form'>
                 <div>

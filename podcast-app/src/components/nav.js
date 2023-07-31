@@ -25,6 +25,7 @@ export default function NavBar({ handleHomeButtonClick }) {
       </div>
       {showNavContainer && (
         <div className="navContainer">
+          <button className="btn-nano"></button>  
           <button className="btn-small"></button>
           <button className="btn-medium"></button>
           <button className="btn-nav" onClick={handleHomeButtonClickInternal}>
