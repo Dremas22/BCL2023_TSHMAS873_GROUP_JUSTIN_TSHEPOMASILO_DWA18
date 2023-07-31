@@ -137,7 +137,7 @@ h3 {
 
 .podcastImage {
   size: 1em;
-  border: 1px solid #0E0B20;
+  border: 1px solid #B0A8B9;
   text-align: center;
   width: 270px;
   height: 310px;
@@ -145,8 +145,9 @@ h3 {
   justify-content: center;
   background-color: #B0A8B9;
   margin: 15px;
-  border-radius: 10px;
+  border-radius: 25px;
   color: #0E0B20;
+  
 }
 
 .episodes {
@@ -167,8 +168,9 @@ h3 {
 
 .podcastImage:hover {
   background-color: #171544;
-  border: 1px solid #B0A8B9;
+  border: 3px solid #845EC2;
   color: snow;
+  box-shadow: 3px 3px 5px #845EC2;
 }
 
 .episodes:hover {
@@ -359,9 +361,11 @@ h3 {
   padding: 10px;
   background-color: #171544;
   justify-content: center;
-  /* margin-top: 10px; */
+
   margin-left: 40px;
   border-radius: 100%;
+  border: 2px solid #845EC2;
+  box-shadow: 3px 3px 10px #845EC2;
 }
 
 .btn-cara {

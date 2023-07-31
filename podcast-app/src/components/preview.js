@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 
 function Show({ onPodcastClick }) {
     const [podcasts, setPodcasts] = useState([]);
