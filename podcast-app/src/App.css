@@ -57,6 +57,7 @@ h3 {
   padding: 10px;
   height: 30px;
   align-items: center;
+ 
 }
 
 
@@ -64,13 +65,36 @@ h3 {
 
   height: 40px;
   width: 180px;
-  height: 40px;
+  height: 50px;
   background-color: #7c5ec269;
   border-radius: 45%;
   font-weight: bolder;
   align-items: center;
   color: lavender;
-  box-shadow: 3px 3px 5px #845EC2;
+  box-shadow: 5px 5px 9px #845EC2;
+  margin-left: 150px;
+  
+}
+
+.btn-small {
+  height: 20px;
+  width: 70px;
+  border-radius: 45%;
+  margin-left: 10px;
+  background-color: aqua;
+  box-shadow: 3px 3px 5px aqua;
+}
+
+.btn-medium {
+  height: 30px;
+  width: 120px;
+  border-radius: 45%;
+  margin-left: 120px;
+  background-color: #942193;
+  box-shadow: 3px 3px 5px #942193;
+  padding-bottom: 10px
+  
+  
 }
 
 .btn-nav:hover {
