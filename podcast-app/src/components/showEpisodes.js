@@ -54,7 +54,7 @@ const SinglePodcastPreview = ({ podcastId }) => {
 
   return (
     <div className='episodes grid-item'>
-
+      
       <div className='single-season grid-item'>
         <h2 className='podcast-title'>{title}</h2>
         <img className='img showImg' src={image} alt={title} />
