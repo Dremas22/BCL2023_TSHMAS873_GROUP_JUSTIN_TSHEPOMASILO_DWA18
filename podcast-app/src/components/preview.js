@@ -32,7 +32,7 @@ function Show({ onPodcastClick }) {
             .catch((error) => console.log(error));
     }, []);
 
-    // Function to handle clicking on a podcast
+    
     const handlePodcastClick = (podcastId, genre) => {
         console.log(`Clicked on podcast with ID: ${podcastId}`);
         onPodcastClick(podcastId, genre);
@@ -42,13 +42,12 @@ function Show({ onPodcastClick }) {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
     };
 
-    // Function to handle moving to the previous image in the slider
     const prevImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length);
     };
 
     useEffect(() => {
-        const interval = setInterval(nextImage, 5000); // Change the interval time as needed (here, 5000ms = 5 seconds)
+        const interval = setInterval(nextImage, 5000); 
     
         // Clear the interval when the component unmounts to avoid memory leaks
         return () => {

@@ -39,7 +39,7 @@ h3 {
 
 .title-btn:hover {
   background-color: #B39CD0;
-  
+
 }
 
 .nav-cast {
@@ -52,12 +52,10 @@ h3 {
 }
 
 .navContainer {
-
   margin-left: 250px;
   padding: 10px;
   height: 30px;
   align-items: center;
- 
 }
 
 
@@ -73,7 +71,7 @@ h3 {
   color: lavender;
   box-shadow: 5px 5px 9px #845EC2;
   margin-left: 150px;
-  
+
 }
 
 .btn-nano {
@@ -83,7 +81,7 @@ h3 {
   border-radius: 45%;
   background-color: #942193;
   box-shadow: 3px 3px 15px #942193;
-  
+
 }
 
 
@@ -104,7 +102,6 @@ h3 {
   background-color: #942193;
   box-shadow: 3px 3px 5px #942193;
   padding-bottom: 10px
-  
 }
 
 .btn-nav:hover {
@@ -161,7 +158,7 @@ h3 {
   margin: 15px;
   border-radius: 25px;
   color: #0E0B20;
-  
+
 }
 
 .episodes {
@@ -180,7 +177,7 @@ h3 {
 }
 
 .num-episodes {
-  color:#f30ebe;
+  color: #f30ebe;
   font-weight: bolder;
 }
 
@@ -297,7 +294,7 @@ h3 {
   height: 30px;
   background-color: #7c5ec269;
   border-radius: 20px;
-  
+
 }
 
 .input-favours:hover {
@@ -309,7 +306,7 @@ h3 {
   list-style: none;
   padding: 0;
   align-items: center;
-  
+
 }
 
 
@@ -324,7 +321,7 @@ h3 {
   box-shadow: 2px 2px 4px #942193;
   background-color: #171544;
   margin: 10px;
-  
+
 }
 
 .h2-favourites {
@@ -343,7 +340,8 @@ h3 {
 
 }
 
-#sortingType, #sortingOrder {
+#sortingType,
+#sortingOrder {
   margin: 5px;
   border-radius: 25px;
   background-color: #7c5ec269;
@@ -407,7 +405,8 @@ h3 {
   margin: 10px
 }
 
-.reset-progress-button, .check-fav {
+.reset-progress-button,
+.check-fav {
   height: 40px;
   width: 340px;
   border-radius: 25px;
@@ -429,11 +428,11 @@ h3 {
 }
 
 audio::-webkit-media-controls-panel {
-  background-color:#404e61;
+  background-color: #404e61;
 }
 
 audio::-webkit-media-controls-panel:hover {
-  background-color:aqua;
+  background-color: aqua;
 }
 
 .li-episode {
@@ -455,4 +454,38 @@ label {
   font-weight: bold;
 }
 
+@media screen and (max-width: 425px) {
+  .nav-cast {
+    width: 220%;
+  }
 
+  .navContainer {
+    margin-left: 70px;
+  }
+
+  .btn-nano {
+    margin-right: 20px;
+  }
+
+  .btn-small {
+    margin-left: 10px;
+    width: 40px;
+    height: 20px;
+  }
+
+  .btn-medium {
+    width: 50px;
+    margin-left: 50px
+  }
+
+  .btn-nav {
+    width: 90px;
+    height: 30px;
+    margin-left: 75px
+  }
+
+  .previewPodcast {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+}

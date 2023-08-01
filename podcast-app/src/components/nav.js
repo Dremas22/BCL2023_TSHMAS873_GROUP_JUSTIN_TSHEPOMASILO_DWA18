@@ -13,7 +13,6 @@ export default function NavBar({ handleHomeButtonClick }) {
   };
 
   const handleHomeButtonClickInternal = () => {
-    // Call the handleHomeButtonClick prop when the "Home" button is clicked
     handleHomeButtonClick();
   };
 

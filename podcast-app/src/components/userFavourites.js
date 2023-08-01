@@ -5,8 +5,8 @@ import saveFavoriteToDatabase from './supadatabase'
 const User = () => {
   const [favorites, setFavorites] = React.useState([]);
   const [newFavorite, setNewFavorite] = React.useState('');
-  const [sortingType, setSortingType] = React.useState('name'); // 'name' or 'date'
-  const [sortingOrder, setSortingOrder] = React.useState('ascending'); // 'ascending' or 'descending'
+  const [sortingType, setSortingType] = React.useState('name'); 
+  const [sortingOrder, setSortingOrder] = React.useState('ascending'); 
 
 
   const handleAddFavorite = () => {
@@ -88,7 +88,6 @@ const User = () => {
         </button>
 
       </div>
-
 
       <div>
         <label htmlFor="sortingType">Sort by:</label>
