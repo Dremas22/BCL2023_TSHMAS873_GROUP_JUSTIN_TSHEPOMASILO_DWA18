@@ -77,7 +77,7 @@ function Show({ onPodcastClick }) {
         e.preventDefault();
         if (searchQuery.trim() !== '' || selectedGenre !== '') {
             const filteredPodcasts = podcasts.filter((podcast) => {
-                const matchesSearchQuery = searchQuery.trim() === '' || podcast.title.toLowerCase().includes(searchQuery.toLowerCase());
+                const matchesSearchQuery = searchQuery.trim() === '' || podcast.tittle.toLowerCase().includes(searchQuery.toLowerCase());
                 const matchesGenre = selectedGenre === '' || (podcast.genres && podcast.genres.includes(parseInt(selectedGenre)));
                 return matchesSearchQuery && matchesGenre;
             });
